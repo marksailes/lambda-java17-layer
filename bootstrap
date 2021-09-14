@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#export _JAVA_OPTIONS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
+
+/opt/jdk-17/bin/java -cp aws-lambda-java-runtime-interface-client-1.1.0.jar com.amazonaws.services.lambda.runtime.api.client.AWSLambda "$_HANDLER"
